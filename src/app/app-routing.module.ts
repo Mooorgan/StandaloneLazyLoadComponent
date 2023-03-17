@@ -22,8 +22,12 @@ const routes: Route[] = [
     //   import('./dashboard/dashboard-routing.module').then(
     //     (mod) => mod.DashboardRoutingModule
     //   ),
+    //---------------Importing Module--------------------------------------------------------
+    // loadChildren: () =>
+    //   import('./dashboard/dashboard.module').then((mod) => mod.DashboardModule),
+    //-------------------Dashboard Routes Constant---------------------------------------------
     loadChildren: () =>
-      import('./dashboard/dashboard.module').then((mod) => mod.DashboardModule),
+      import('./dashboard/routes').then((mod) => mod.DASHBOARD_ROUTES),
   },
 ];
 
